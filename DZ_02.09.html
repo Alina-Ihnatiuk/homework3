@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title> Конспект HTML </title>
+   <meta charset="utf-8">
+   <link href='style1.css' rel='stylesheet'>
+   <style>
+		body {
+			width: 1040px;
+			margin: auto;
+			font-family: Georgia, 'Times New Roman', Times, serif;
+			background-color: #FFEBCD;
+			font-size: 20px;
+			line-height: 1.5;
+		}
+		<!--стили внутри тега head-->
+   </style>
+ </head>
+ <body>
+	<header> <!--стили инлайн--> <h1 style='font-size: 30; text-shadow: 2px 2px 4px black; color: #800000;'>Мой конспект курса HTML для начинающих </h1>
+		<hr size='2px' color='#808000'>
+	</header>
+		<img src='img_html.jpg'>
+		<h2 id='determings'>Основные понятия</h2>
+		<dl>
+			<dt>HTML (от англ. HyperText Markup Language — «язык гипертекстовой разметки»)</dt>
+				<dd>стандартный язык разметки документов во Всемирной паутине. Большинство веб-страниц 
+					содержат описание разметки на языке HTML (или
+					XHTML). Язык HTML интерпретируется браузерами и отображается в виде
+					документа в удобной для человека форме.
+				</dd>
+			<dt>Гипертекст (англ. hypertext)</dt>
+				<dd> термин, обозначающий систему из текстовых страниц, имеющих перекрёстные ссылки.
+					Примерами гипертекста являются энциклопедии, компьютерные сети, веб-сайты, в которых 
+					можно переходить с одной страницы на другую и выполнять поиск по ключевым словам.
+				</dd>
+			<dt> Тег, теги(иногда тэг, англ. tag — именованная метка).</dt> 
+				<dd>В SGML (HTML, WML, AmigaGuide, языках семейства XML) — 
+					элемент языка разметки гипертекста. Текст, содержащийся между начальным и конечным тегом, 
+					отображается и размещается в соответствии со свойствами, указанными в начальном теге.
+				</dd>
+			<dt> Атрибут (от лат. attributio — приписывание, признак)</dt>
+				<dd>свойства, дающие дополнительные возможности форматирования текста. 
+					Они записываются в виде сочетания: имя атрибута-значения, причём текстовые значения заключаются
+					в кавычки.
+				</dd>
+		</dl>	
+ 
+	<div class='border'><h3>Перейти к:</h3>
+		<ul type='square'>
+			<li><a href='#determings'>Списку определений</a></li>
+			<li><a href='#classification'>Клисификации тегов</a></li>
+			<li><a href='#sources'>Списку источников</a></li>
+		</ul>	
+	</div> 
+		<h2 id='classification'>Класификация тегов</h2>
+		<ol>
+			<li class='1'> Теги верхнего уровня:
+				<ul type='disc'>
+					<li>html</li>
+					<li>head</li>
+					<li>body</li>	
+				</ul>	
+			</li>
+			<li> Теги заголовка документа
+				<ul type='disc'>
+					<li>title</li>
+					<li>meta</li>	
+				</ul>	
+			</li>
+			<li> Блочные элементы:
+				<ul type='disc'>
+					<li>div</li>
+					<li>hr</li>
+					<li>hi,...,h6</li>
+					<li>p и тд.</li>				
+				</ul>	
+			</li>
+			<li> Строчные элементы;
+				<ul type='disc'>
+					<li>a</li>
+					<li>br</li>
+					<li>img</li>
+					<li>strong и тд.</li>				
+				</ul>	
+			</li>
+			<li> Списки:
+				<ul type='disc'>
+					<li>ol, ul, li</li>
+					<li> dd, dt, dl</li>				
+				</ul>	
+			</li>
+			<li> Таблицы
+				<ul type='disc'>
+					<li>table</li>
+					<li>td, th, tr</li>				
+				</ul>	
+			</li>
+		</ol>
+	<footer class='border'>
+		<h2 id='sources'>Ссылки на источники:</h2>
+			<ul type='square'>
+				<li><a href='https://ru.wikipedia.org/wiki/HTML' target='blank' title='Перейти на сайт Википедии'> Википедия </a></li>
+				<li><a href='http://htmlbook.ru/' target='blank'> htmlbook </a></li>
+				<li><a href='https://htmlacademy.ru/' target='blank'> htmlacademy </a></li>
+			</ul>	
+	</footer>
+	
+ </body> 
+</html>
