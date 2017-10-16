@@ -1,0 +1,26 @@
+alina@HP-Pavillion ~ $ pwd
+/home/alina
+alina@HP-Pavillion ~ $ mkdir folder
+alina@HP-Pavillion ~ $ cd folder
+alina@HP-Pavillion ~/folder $ touch test_{A..E}
+alina@HP-Pavillion ~/folder $ date | tee test_{A..E}
+ѕнд ќкт 16 23:07:38 EEST 2017
+alina@HP-Pavillion ~/folder $ cat test_{A..E}
+ѕнд ќкт 16 23:07:38 EEST 2017
+ѕнд ќкт 16 23:07:38 EEST 2017
+ѕнд ќкт 16 23:07:38 EEST 2017
+ѕнд ќкт 16 23:07:38 EEST 2017
+ѕнд ќкт 16 23:07:38 EEST 2017
+alina@HP-Pavillion ~/folder $ for x in $(ls); do date > $x; done
+alina@HP-Pavillion ~/folder $ cat test_{A..E}
+ѕнд ќкт 16 23:10:11 EEST 2017
+ѕнд ќкт 16 23:10:11 EEST 2017
+ѕнд ќкт 16 23:10:11 EEST 2017
+ѕнд ќкт 16 23:10:11 EEST 2017
+ѕнд ќкт 16 23:10:11 EEST 2017
+alina@HP-Pavillion ~/folder $ grep -ch 2017 test_{A..E} | wc -l
+5
+alina@HP-Pavillion ~/folder $ cd ../
+alina@HP-Pavillion ~ $ pwd
+/home/alina
+alina@HP-Pavillion ~ $ rm -rf folder
